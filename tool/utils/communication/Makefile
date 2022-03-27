@@ -1,0 +1,6 @@
+COMMUNICATION_DIR=$(UTILS_DIR)/communication
+
+C_INCLUDES += -I$(COMMUNICATION_DIR)
+
+C_SOURCES += $(wildcard $(COMMUNICATION_DIR)/*.c)
+C_SOURCES += $(wildcard $(COMMUNICATION_DIR)/*.cpp)

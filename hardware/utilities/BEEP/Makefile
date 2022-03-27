@@ -1,0 +1,5 @@
+BEEP_DIR=$(UTILITIES_DIR)/BEEP
+
+C_INCLUDES += -I$(BEEP_DIR)
+
+C_SOURCES += $(wildcard $(BEEP_DIR)/*.c)

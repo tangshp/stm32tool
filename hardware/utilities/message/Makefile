@@ -1,0 +1,5 @@
+MESSAGE_DIR=$(UTILITIES_DIR)/message
+
+C_INCLUDES += -I$(MESSAGE_DIR)
+
+C_SOURCES += $(wildcard $(MESSAGE_DIR)/*.c)

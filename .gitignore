@@ -1,0 +1,4 @@
+.vscode/*
+tool/build/*
+hardware/build/*
+hardware/.vscode/*

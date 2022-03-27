@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/STUDY/CubeMX_ws/usart_com/tool/utils/cpp-linenoise/build/example",
+  "command": "E:\\mingw64\\bin\\g++.exe  @CMakeFiles/example.dir/includes_CXX.rsp -g   -std=c++1y -o CMakeFiles\\example.dir\\example.cpp.obj -c D:\\STUDY\\CubeMX_ws\\usart_com\\tool\\utils\\cpp-linenoise\\example\\example.cpp",
+  "file": "D:/STUDY/CubeMX_ws/usart_com/tool/utils/cpp-linenoise/example/example.cpp"
+}
+]

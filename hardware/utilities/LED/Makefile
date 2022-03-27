@@ -1,0 +1,5 @@
+LED_DIR=$(UTILITIES_DIR)/LED
+
+C_INCLUDES += -I$(LED_DIR)
+
+C_SOURCES += $(wildcard $(LED_DIR)/*.c)
