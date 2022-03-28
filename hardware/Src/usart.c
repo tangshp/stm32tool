@@ -147,13 +147,6 @@ bool checkFrame(const MessageSerial_t *pMessageSerial)
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-  // printf("HAL_UART_RxCpltCallback:rDataBuffer -> ");
-  // for (size_t i = 0; i < 42; i++)
-  // {
-  //   printf("%02X ", rDataBuffer[i]);
-  // }
-
-  // print("\r\n");
   if (huart == &huart1)
   {
     MessageSerial_t *pMessageSerial = (MessageSerial_t *)(rDataBuffer);
