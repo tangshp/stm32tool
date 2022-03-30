@@ -1,21 +1,21 @@
 /**
- ******************************************************************************
- * @file    gpio.c
- * @brief   This file provides code for the configuration
- *          of all used GPIO pins.
- ******************************************************************************
- * @attention
- *
- * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
- * All rights reserved.</center></h2>
- *
- * This software component is licensed by ST under BSD 3-Clause license,
- * the "License"; You may not use this file except in compliance with the
- * License. You may obtain a copy of the License at:
- *                        opensource.org/licenses/BSD-3-Clause
- *
- ******************************************************************************
- */
+  ******************************************************************************
+  * @file    gpio.c
+  * @brief   This file provides code for the configuration
+  *          of all used GPIO pins.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
@@ -33,12 +33,12 @@
 /* USER CODE END 1 */
 
 /** Configure pins as
- * Analog
- * Input
- * Output
- * EVENT_OUT
- * EXTI
- */
+        * Analog
+        * Input
+        * Output
+        * EVENT_OUT
+        * EXTI
+*/
 void MX_GPIO_Init(void)
 {
 
@@ -53,10 +53,10 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED0_Pin | BEEP_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LED0_Pin|BEEP_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PEPin PEPin */
-  GPIO_InitStruct.Pin = KEY1_Pin | KEY0_Pin;
+  GPIO_InitStruct.Pin = KEY1_Pin|KEY0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
@@ -97,6 +97,7 @@ void MX_GPIO_Init(void)
 
   HAL_NVIC_SetPriority(EXTI4_IRQn, 1, 2);
   HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+
 }
 
 /* USER CODE BEGIN 2 */
